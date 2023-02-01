@@ -11,7 +11,7 @@ const PokemonCard: FC<Props> = ({ pokemon }) => {
   const { id, name, img } = pokemon;
   const router = useRouter();
 
-  const handleClick = () => router.push(`/pokemon/${pokemon.id}`);
+  const handleClick = () => router.push(`/name/${pokemon.name}`);
 
   return (
     <Grid xs={6} sm={3} md={2} xl={1}>
